@@ -11,7 +11,8 @@ ROOT = Path(__file__).resolve().parent
 OUTPUT = ROOT / "docs"
 DATA = json.loads((ROOT / "content" / "site.json").read_text(encoding="utf-8"))
 ASSET_VERSIONS = {
-    name: sha256((OUTPUT / "assets" / name).read_bytes()).hexdigest()[:12]
+    # Text-mode reads keep the cache key stable across checkout line endings.
+    name: sha256((OUTPUT / "assets" / name).read_text(encoding="utf-8").encode("utf-8")).hexdigest()[:12]
     for name in ("site.css", "site.js")
 }
 
