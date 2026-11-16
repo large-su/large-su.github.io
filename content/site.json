@@ -1,0 +1,324 @@
+{
+  "site_url": "https://large-su.github.io/",
+  "updated": "2026-11-16",
+  "person": {
+    "name": {
+      "zh": "苏俊通",
+      "en": "Juntong Su"
+    },
+    "page_title": {
+      "zh": "苏俊通 | 机器人加工与运动规划",
+      "en": "Juntong Su | Robotic Machining and Motion Planning"
+    },
+    "description": {
+      "zh": "苏俊通的学术主页，介绍受限空间机器人铣削、多约束姿态与轨迹规划，以及相关论文、专利和会议成果。",
+      "en": "Academic homepage of Juntong Su, with research and publications on restricted-space robotic milling and constraint-aware posture and trajectory planning."
+    },
+    "field": {
+      "zh": "机器人加工与运动规划",
+      "en": "Robotic machining and motion planning"
+    },
+    "affiliation": {
+      "zh": "华中科技大学机械科学与工程学院",
+      "en": "School of Mechanical Science and Engineering, Huazhong University of Science and Technology"
+    },
+    "intro": {
+      "zh": "我研究工业机器人如何在受限空间内加工复杂曲面，重点是沿既定刀路连续调整加工姿态，同时满足空间可达性、运动约束与加工性能要求。",
+      "en": "I study how industrial robots can machine complex surfaces in confined spaces. My work focuses on planning continuous tool orientations along a prescribed toolpath under geometric, kinematic, and machining constraints."
+    },
+    "github": "https://github.com/large-su"
+  },
+  "hero": {
+    "file": "assets/robotic-milling.webp",
+    "width": 1448,
+    "height": 1086,
+    "alt": {
+      "zh": "一台橙色工业机械臂将铣削刀具伸向固定在工作台上的青铜螺旋桨。",
+      "en": "An orange industrial robot positions a milling tool near a bronze propeller mounted on a machine bed."
+    },
+    "caption": {
+      "zh": "机器人铣削螺旋桨的场景示意",
+      "en": "Illustration of a robotic propeller milling setup"
+    }
+  },
+  "research": [
+    {
+      "title": {
+        "zh": "受限空间机器人铣削",
+        "en": "Restricted-space robotic milling"
+      },
+      "description": {
+        "zh": "面向螺旋桨等复杂曲面，研究刀具在障碍物、工件与机器人自身结构限制下的可达姿态。",
+        "en": "Finding reachable tool orientations for parts such as propellers, where obstacles, the workpiece, and robot geometry limit access."
+      }
+    },
+    {
+      "title": {
+        "zh": "多约束姿态与轨迹规划",
+        "en": "Constraint-aware posture and trajectory planning"
+      },
+      "description": {
+        "zh": "将几何、运动学、力学和工艺约束纳入同一规划过程，求解贯穿刀路的连续加工姿态。",
+        "en": "Planning continuous machining postures along a toolpath while accounting for geometric, kinematic, mechanical, and process constraints."
+      }
+    },
+    {
+      "title": {
+        "zh": "加工性能建模与验证",
+        "en": "Machining performance and validation"
+      },
+      "description": {
+        "zh": "结合加工变形、误差和刀具磨损等过程信息，借助基准任务与实际加工实验评价规划结果。",
+        "en": "Using benchmarks and machining experiments to evaluate planning outcomes, with related work on deformation, errors, and tool wear."
+      }
+    }
+  ],
+  "publication_topics": {
+    "planning": {
+      "zh": "姿态与轨迹规划",
+      "en": "Posture and trajectory planning"
+    },
+    "process": {
+      "zh": "加工感知与数字孪生",
+      "en": "Process sensing and digital twins"
+    }
+  },
+  "publications": [
+    {
+      "id": "potential-network",
+      "year": 2026,
+      "type": "journal",
+      "role": "first",
+      "topic": "planning",
+      "title": {
+        "zh": "受限空间机器人铣削的三维姿态规划研究：一种势网络架构",
+        "en": "Investigation of the 3D-posture planning for space-restricted robotic milling: A potential network architecture"
+      },
+      "authors": ["Juntong Su", "Shengqiang Zhao", "Fangyu Peng", "Xiaowei Tang", "Rong Yan"],
+      "venue": "International Journal of Machine Tools and Manufacture",
+      "citation": "215, 104364",
+      "doi": "10.1016/j.ijmachtools.2026.104364",
+      "summary": {
+        "zh": "用势网络统一表达姿态规划中的约束与目标，并构建考虑刀具与工件接触状态的姿态流形。方法在受限空间基准和螺旋桨加工任务中得到验证。",
+        "en": "A potential network brings planning constraints and objectives into one model. A posture manifold accounts for cutter–workpiece engagement. The approach was evaluated on a restricted-space benchmark and propeller milling tasks."
+      }
+    },
+    {
+      "id": "prime",
+      "year": 2026,
+      "type": "journal",
+      "role": "co-first",
+      "topic": "planning",
+      "title": {
+        "zh": "PRIME：多约束机器人加工智能姿态轨迹规划的系统演化视角",
+        "en": "PRIME: A systematic evolution perspective on intelligent posture-trajectory planning for robotic machining under multiple constraints"
+      },
+      "authors": ["Juntong Su", "Shengqiang Zhao", "Fangyu Peng", "Li Zhang", "Xiaowei Tang", "Xin Wang", "Rong Yan", "Hao Zhang"],
+      "venue": "Journal of Manufacturing Systems",
+      "citation": "89, 1177–1209",
+      "doi": "10.1016/j.jmsy.2026.10.021",
+      "summary": {
+        "zh": "通过梳理 222 项研究，将加工姿态视为沿刀路在约束下连续演化的规划变量，并归纳从冗余角优化到全自由度规划的四级能力框架。",
+        "en": "This review of 222 studies treats machining posture as a planning variable that evolves under constraints along the toolpath. It identifies four capability levels, from redundancy-angle optimization to full-degree-of-freedom planning."
+      }
+    },
+    {
+      "id": "tool-wear",
+      "year": 2026,
+      "type": "journal",
+      "role": "coauthor",
+      "topic": "process",
+      "title": {
+        "zh": "融合多模态信息的可解释预知：物理知识驱动的时变刀具磨损预测",
+        "en": "Towards interpretable foreknowledge with multimodal information fusion: Physical-knowledge inspired time-varying tool wear intelligent prediction"
+      },
+      "authors": ["Shengqiang Zhao", "Fangyu Peng", "Xiuqing Hao", "Ning He", "Juntong Su", "Ni Chen", "Guolong Zhao", "Yinfei Yang", "Yunfeng Zhang", "Hao Wang"],
+      "venue": "Journal of Manufacturing Systems",
+      "citation": "86, 435–455",
+      "doi": "10.1016/j.jmsy.2026.03.022"
+    },
+    {
+      "id": "active-adjustment",
+      "year": 2025,
+      "type": "journal",
+      "role": "coauthor",
+      "topic": "planning",
+      "title": {
+        "zh": "极端约束下曲面机器人铣削姿态主动调整：基于广义累积功指标的分治策略",
+        "en": "Extremely constrained robotic milling posture active adjustment on curved surface: Divide and conquer strategy with index of generalized accumulative work"
+      },
+      "authors": ["Shengqiang Zhao", "Fangyu Peng", "Juntong Su", "Xiaowei Tang", "Teng Zhang", "Jiawei Wu", "Rong Yan"],
+      "venue": "Robotics and Computer-Integrated Manufacturing",
+      "citation": "95, 103036",
+      "doi": "10.1016/j.rcim.2025.103036"
+    },
+    {
+      "id": "rmdts",
+      "year": 2025,
+      "type": "journal",
+      "role": "coauthor",
+      "topic": "process",
+      "title": {
+        "zh": "RMDTs：面向加工过程与服务扩展的功能触发式机器人铣削数字孪生系统",
+        "en": "RMDTs: Process-oriented function-triggered robotic milling digital twin system for service-expansion"
+      },
+      "authors": ["Shengqiang Zhao", "Fangyu Peng", "Yunan Shan", "Juntong Su", "Xiaowei Tang", "Rong Yan"],
+      "venue": "Journal of Manufacturing Systems",
+      "citation": "82, 578–598",
+      "doi": "10.1016/j.jmsy.2025.07.015"
+    },
+    {
+      "id": "cirp-twin",
+      "year": 2025,
+      "type": "conference",
+      "role": "coauthor",
+      "topic": "planning",
+      "title": {
+        "zh": "面向机器人加工姿态孪生规划的多约束离散叠加机制",
+        "en": "Discrete-superposition mechanism of multiple constraints for robotic machining posture twin planning"
+      },
+      "authors": ["Shengqiang Zhao", "Fangyu Peng", "Juntong Su", "Xiaowei Tang", "Rong Yan"],
+      "venue": "Procedia CIRP",
+      "citation": "133, 239–244",
+      "doi": "10.1016/j.procir.2025.02.042"
+    },
+    {
+      "id": "deformation-key-points",
+      "year": 2025,
+      "type": "conference",
+      "role": "coauthor",
+      "topic": "process",
+      "title": {
+        "zh": "基于关键点确定的机器人加工变形稀疏表征",
+        "en": "Sparse Representation of Robotic Machining Deformation Based on Key Points Determination"
+      },
+      "authors": ["Yunan Shan", "Shengqiang Zhao", "Fangyu Peng", "Rong Yan", "Xiaowei Tang", "Juntong Su", "Hao Sun"],
+      "venue": "Intelligent Robotics and Applications (ICIRA 2024)",
+      "citation": "15202, 3–18",
+      "doi": "10.1007/978-981-96-0774-7_1"
+    },
+    {
+      "id": "self-adaptive-agent",
+      "year": 2024,
+      "type": "journal",
+      "role": "coauthor",
+      "topic": "planning",
+      "title": {
+        "zh": "面向机器人铣削系统柔性姿态规划的自适应智能体",
+        "en": "A self-adaptive agent for flexible posture planning in robotic milling system"
+      },
+      "authors": ["Shengqiang Zhao", "Fangyu Peng", "Juntong Su", "Hao Sun", "Rong Yan", "Xiaowei Tang", "Teng Zhang", "Zepeng Li"],
+      "venue": "Journal of Manufacturing Systems",
+      "citation": "75, 228–245",
+      "doi": "10.1016/j.jmsy.2024.06.009"
+    },
+    {
+      "id": "error-foreknowledge",
+      "year": 2023,
+      "type": "journal",
+      "role": "coauthor",
+      "topic": "process",
+      "title": {
+        "zh": "面向机器人加工误差在位预测的稀疏贝叶斯模型：特征融合与蒸馏",
+        "en": "Feature fusion and distillation embedded sparse Bayesian learning model for in-situ foreknowledge of robotic machining errors"
+      },
+      "authors": ["Shengqiang Zhao", "Hao Sun", "Fangyu Peng", "Rong Yan", "Xiaowei Tang", "Yunan Shan", "Juntong Su"],
+      "venue": "Journal of Manufacturing Systems",
+      "citation": "71, 546–564",
+      "doi": "10.1016/j.jmsy.2023.10.007"
+    }
+  ],
+  "benchmark": {
+    "title": {
+      "zh": "受限空间机器人铣削基准",
+      "en": "A benchmark for robotic milling in restricted spaces"
+    },
+    "description": {
+      "zh": "仓库提供基准几何文件与使用说明，可在机器人仿真环境中比较姿态规划的可行性与关节运动的平滑性。",
+      "en": "The repository provides benchmark geometry and setup notes for comparing posture feasibility and joint-motion smoothness in robot simulation."
+    },
+    "url": "https://github.com/large-su/A-benchmark-for-robotic-milling-in-restricted-spaces"
+  },
+  "patents": [
+    {
+      "number": "CN120572524B",
+      "status": "grant",
+      "date": "2026-04-17",
+      "title": {
+        "zh": "复杂曲面机器人加工的冗余角与工艺参数联合优化方法及设备",
+        "en": "Method and device for joint optimization of the redundancy angle and process parameters in robotic machining of complex surfaces"
+      },
+      "applicant": {
+        "zh": "华中科技大学",
+        "en": "Huazhong University of Science and Technology"
+      },
+      "inventors": {
+        "zh": ["彭芳瑜", "苏俊通", "赵晟强", "单玉楠", "汪鑫", "闫蓉", "唐小卫"],
+        "en": ["Fangyu Peng", "Juntong Su", "Shengqiang Zhao", "Yunan Shan", "Xin Wang", "Rong Yan", "Xiaowei Tang"]
+      },
+      "url": "https://patents.google.com/patent/CN120572524B/zh"
+    },
+    {
+      "number": "CN120122522A",
+      "status": "application",
+      "date": "2025-06-10",
+      "title": {
+        "zh": "一种基于加工变形稀疏关键点的加工参数全局优化方法及设备",
+        "en": "Method and device for global optimization of machining parameters using sparse deformation key points"
+      },
+      "applicant": {
+        "zh": "华中科技大学",
+        "en": "Huazhong University of Science and Technology"
+      },
+      "inventors": {
+        "zh": ["彭芳瑜", "单玉楠", "赵晟强", "苏俊通", "汪鑫", "闫蓉", "唐小卫"],
+        "en": ["Fangyu Peng", "Yunan Shan", "Shengqiang Zhao", "Juntong Su", "Xin Wang", "Rong Yan", "Xiaowei Tang"]
+      },
+      "url": "https://patents.google.com/patent/CN120122522A/zh"
+    }
+  ],
+  "events": [
+    {
+      "date": "2025-05-22",
+      "title": {
+        "zh": "第 20 届 CIRP 加工过程建模会议（CMMO 2025）",
+        "en": "20th CIRP Conference on Modeling of Machining Operations (CMMO 2025)"
+      },
+      "location": {
+        "zh": "比利时蒙斯",
+        "en": "Mons, Belgium"
+      },
+      "role": {
+        "zh": "会议论文合著",
+        "en": "Conference paper co-author"
+      },
+      "paper": "cirp-twin",
+      "link_label": {
+        "zh": "会议议程",
+        "en": "Conference programme"
+      },
+      "url": "https://web.umons.ac.be/app/uploads/sites/60/2025/05/ProgramFull_20250512.pdf"
+    },
+    {
+      "date": "2024-07-31",
+      "title": {
+        "zh": "第 17 届智能机器人与应用国际会议（ICIRA 2024）",
+        "en": "17th International Conference on Intelligent Robotics and Applications (ICIRA 2024)"
+      },
+      "location": {
+        "zh": "中国西安",
+        "en": "Xi’an, China"
+      },
+      "role": {
+        "zh": "会议论文合著",
+        "en": "Conference paper co-author"
+      },
+      "paper": "deformation-key-points",
+      "link_label": {
+        "zh": "会议论文集",
+        "en": "Conference proceedings"
+      },
+      "url": "https://link.springer.com/book/10.1007/978-981-96-0774-7"
+    }
+  ]
+}
