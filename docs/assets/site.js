@@ -39,3 +39,20 @@ if (controls) {
   search.addEventListener("input", filterPublications);
   controls.hidden = false;
 }
+
+const copyCitation = document.querySelector("[data-copy-citation]");
+
+if (copyCitation && navigator.clipboard) {
+  const citation = document.querySelector("[data-citation]");
+  const copyStatus = document.querySelector("[data-copy-status]");
+
+  copyCitation.hidden = false;
+  copyCitation.addEventListener("click", async () => {
+    try {
+      await navigator.clipboard.writeText(citation.textContent.trim());
+      copyStatus.textContent = copyCitation.dataset.copied;
+    } catch {
+      copyStatus.textContent = copyCitation.dataset.copyError;
+    }
+  });
+}

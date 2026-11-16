@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://large-su.github.io/</loc></url>
+  <url><loc>https://large-su.github.io/papers/potential-network/</loc></url>
+  <url><loc>https://large-su.github.io/papers/prime/</loc></url>
+  <url><loc>https://large-su.github.io/papers/tool-wear/</loc></url>
+  <url><loc>https://large-su.github.io/papers/active-adjustment/</loc></url>
+  <url><loc>https://large-su.github.io/papers/rmdts/</loc></url>
+  <url><loc>https://large-su.github.io/papers/cirp-twin/</loc></url>
+  <url><loc>https://large-su.github.io/papers/deformation-key-points/</loc></url>
+  <url><loc>https://large-su.github.io/papers/self-adaptive-agent/</loc></url>
+  <url><loc>https://large-su.github.io/papers/error-foreknowledge/</loc></url>
   <url><loc>https://large-su.github.io/en/</loc></url>
+  <url><loc>https://large-su.github.io/en/papers/potential-network/</loc></url>
+  <url><loc>https://large-su.github.io/en/papers/prime/</loc></url>
+  <url><loc>https://large-su.github.io/en/papers/tool-wear/</loc></url>
+  <url><loc>https://large-su.github.io/en/papers/active-adjustment/</loc></url>
+  <url><loc>https://large-su.github.io/en/papers/rmdts/</loc></url>
+  <url><loc>https://large-su.github.io/en/papers/cirp-twin/</loc></url>
+  <url><loc>https://large-su.github.io/en/papers/deformation-key-points/</loc></url>
+  <url><loc>https://large-su.github.io/en/papers/self-adaptive-agent/</loc></url>
+  <url><loc>https://large-su.github.io/en/papers/error-foreknowledge/</loc></url>
 </urlset>

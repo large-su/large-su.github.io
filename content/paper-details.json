@@ -1,0 +1,182 @@
+{
+  "potential-network": {
+    "overview": {
+      "zh": "本文面向受限空间内的机器人铣削姿态规划问题，提出一种可扩展的势网络架构，将可达性、碰撞风险和加工性能等异构约束与目标统一映射到规划空间。研究进一步构建考虑刀具—工件接触状态的姿态流形，使工具姿态能够沿复杂曲面刀路连续调整，并通过受限空间基准任务和螺旋桨加工任务验证规划结果。",
+      "en": "This paper addresses posture planning for robotic milling in restricted spaces. It introduces an extensible potential-network architecture that maps heterogeneous constraints and objectives, including accessibility, collision risk, and machining performance, into a common planning space. A posture manifold incorporates cutter–workpiece engagement so that orientations can evolve continuously along complex toolpaths. The approach is evaluated on a restricted-space benchmark and propeller machining tasks."
+    },
+    "contributions": [
+      {
+        "zh": "提出由势单元、势函数、势网络和势解组成的模块化规划架构，用于统一组织多约束、多目标问题。",
+        "en": "A modular planning architecture is established from potential units, potential functions, potential networks, and potential solutions for multi-constraint and multi-objective tasks."
+      },
+      {
+        "zh": "构建与刀具—工件接触状态相关的姿态流形，为复杂曲面加工中的三维姿态描述和快速模式切换提供参数化表达。",
+        "en": "A cutter–workpiece-aware posture manifold provides a parametric representation for three-dimensional orientation planning and rapid mode changes on complex surfaces."
+      },
+      {
+        "zh": "在受限空间基准和代表性螺旋桨构型上验证规划方法的可行性与适应性。",
+        "en": "Restricted-space benchmark tasks and representative propeller configurations are used to assess planning feasibility and adaptability."
+      }
+    ]
+  },
+  "prime": {
+    "overview": {
+      "zh": "PRIME 将机器人加工中的姿态规划重新表述为沿刀路在动态可行域内演化的系统问题。文章依据 PRISMA 流程梳理 222 项研究，统一讨论几何、运动学、力学和工艺约束的建模方式，提出从冗余角优化到全自由度智能规划的能力层级，并总结面向可部署系统的技术演进路线。",
+      "en": "PRIME reframes posture planning in robotic machining as a system-evolution problem in which posture changes along the toolpath inside a dynamic feasible region. Following a PRISMA-based review of 222 studies, the paper connects geometric, kinematic, mechanical, and process constraints, defines capability levels from redundancy-angle optimization to full-degree-of-freedom intelligent planning, and outlines a roadmap toward deployable systems."
+    },
+    "contributions": [
+      {
+        "zh": "提出以姿态—轨迹演化为核心的综述框架，连接约束建模、规划策略和系统能力。",
+        "en": "A posture–trajectory evolution framework links constraint modeling, planning strategies, and system capability."
+      },
+      {
+        "zh": "建立覆盖几何、运动学、力学和工艺因素的统一问题表述，并归纳四级规划能力层级。",
+        "en": "A unified formulation covers geometric, kinematic, mechanical, and process factors, with four levels of planning capability identified."
+      },
+      {
+        "zh": "提供公开的受限空间铣削基准，用于比较不同规划方法，并讨论工艺约束建模和工程验证仍需解决的问题。",
+        "en": "A public restricted-space milling benchmark supports comparisons between planners. The review also identifies open problems in modeling process constraints and validating planners in engineering settings."
+      }
+    ]
+  },
+  "tool-wear": {
+    "overview": {
+      "zh": "研究关注少量样本条件下的时变刀具磨损预测。模型对齐并融合切削力、振动和声发射信号，将磨损分布的物理知识引入预测过程，并通过钛合金切削数据考察预测性能和可解释性。",
+      "en": "The study predicts how tool wear changes over time when training samples are limited. It aligns cutting-force, vibration, and acoustic-emission signals, incorporates physical knowledge of wear into the prediction model, and evaluates its performance and interpretability on titanium-alloy cutting data."
+    },
+    "contributions": [
+      {
+        "zh": "提出物理知识驱动的时变刀具磨损多模态融合框架。",
+        "en": "A physical-knowledge-inspired multimodal framework is proposed for time-varying tool-wear prediction."
+      },
+      {
+        "zh": "引入多簇中心化预测与 Shapley 叠加分析，增强模型对不同磨损状态的解释能力。",
+        "en": "Multi-cluster centralized prediction and Shapley superposition analysis improve interpretation across wear states."
+      },
+      {
+        "zh": "围绕难加工钛合金场景验证方法在少样本、高维信号条件下的可扩展性。",
+        "en": "The method is evaluated for scalability under few-shot, high-dimensional signals in difficult-to-machine titanium-alloy scenarios."
+      }
+    ]
+  },
+  "active-adjustment": {
+    "overview": {
+      "zh": "复杂曲面各处的曲率与可行姿态范围不同。研究以广义势场统一处理机器人结构和刀具接触约束，按曲率相似性划分加工区域，并以广义累积功比较各区域的姿态方案。论文通过曲面铣削实验，与商用 CAM 规划结果对照评估运动学表现和加工精度。",
+      "en": "Curvature and feasible robot postures vary across a complex surface. The study combines robot and cutter–workpiece constraints in a generalized potential field, partitions the surface by curvature similarity, and uses a generalized accumulative-work measure to compare posture choices. Curved-surface milling experiments assess kinematic behavior and machining accuracy against commercial CAM planning."
+    },
+    "contributions": [
+      {
+        "zh": "将不同量纲的约束归入广义势场，并通过虚拟势力矩驱动姿态调整。",
+        "en": "A generalized potential field puts constraints on a common scale, and virtual potential torque drives posture adjustment."
+      },
+      {
+        "zh": "按曲率相似性分区，在分区边界保持高阶连续性。",
+        "en": "Regions are divided by curvature similarity while maintaining high-order continuity across their boundaries."
+      },
+      {
+        "zh": "以广义累积功作为全局指标，在多个可行姿态方案中进行比较。",
+        "en": "Generalized accumulative work serves as a global measure for comparing feasible posture choices."
+      }
+    ]
+  },
+  "rmdts": {
+    "overview": {
+      "zh": "RMDTs 面向大型复杂构件的机器人铣削，提出以加工过程为主线、以功能触发为机制、以服务扩展为目标的数字孪生系统。系统连接智能规划、过程监测和预知功能，通过三类机器人加工案例展示不同工件、刀具和工艺条件下的信息组织与服务扩展能力。",
+      "en": "RMDTs presents a process-oriented digital-twin system for robotic milling of large and complex components. The system is organized around process context, function-triggered services, and extensibility. It connects intelligent planning with process monitoring and foreknowledge, and demonstrates information organization and service expansion across robotic machining cases with different workpieces, tools, and process conditions."
+    },
+    "contributions": [
+      {
+        "zh": "提出面向加工过程、功能触发和服务扩展的机器人铣削数字孪生框架。",
+        "en": "A robotic-milling digital-twin framework is built around process orientation, function triggering, and service expansion."
+      },
+      {
+        "zh": "构建连接智能中心规划与监测预知的双环系统结构。",
+        "en": "A dual-loop structure connects intelligent central planning with monitoring and foreknowledge."
+      },
+      {
+        "zh": "通过不同工件、刀具和工艺条件的典型案例检验系统的服务扩展能力。",
+        "en": "Typical cases with different workpieces, tools, and process conditions examine the system's service extensibility."
+      }
+    ]
+  },
+  "cirp-twin": {
+    "overview": {
+      "zh": "研究面向大型复杂曲面受限加工，将几何、运动学和加工性能约束分层处理并离散叠加，以描述可行的机器人姿态。通过三组大型铜合金工件加工试验，比较规划方法对切深波动和表面粗糙度的影响。",
+      "en": "The study addresses robotic machining of large curved parts in restricted spaces. It examines geometric, kinematic, and performance constraints in layers and combines them discretely to represent feasible postures. Three machining tests on a large copper-alloy workpiece compare variation in cutting depth and surface roughness."
+    },
+    "contributions": [
+      {
+        "zh": "逐层分析约束如何缩小机器人加工姿态的可行范围。",
+        "en": "Constraints are examined in layers to determine how each narrows the feasible posture range."
+      },
+      {
+        "zh": "在几何可行性基础上，叠加考虑运动学和加工性能要求，建立姿态孪生规划模型。",
+        "en": "The posture-twin planning model combines geometric feasibility with the effects of kinematic and machining performance constraints."
+      },
+      {
+        "zh": "用铜合金铣削实验检验各约束共同参与规划时的加工表现。",
+        "en": "Copper-alloy milling trials evaluate machining performance when the constraints are considered together."
+      }
+    ]
+  },
+  "deformation-key-points": {
+    "overview": {
+      "zh": "本文针对机器人加工变形中的力、刚度等物理量难以全面测量的问题，提出基于关键点提取的稀疏表征策略。研究分别建立切削力预测模型和机器人末端刚度模型，再从分布数据中提取脊线与关键值，用较少的关键点重建变形的全局分布，并通过稀疏表征误差评价可靠性。",
+      "en": "This paper addresses the difficulty of measuring process quantities such as cutting force and stiffness across a robotic machining task. It develops cutting-force and robot-end stiffness models, extracts ridge structures and key values from their distributions, and uses a small set of key points to reconstruct global deformation information. Sparse-representation error is used to assess the reliability of the reconstruction."
+    },
+    "contributions": [
+      {
+        "zh": "提出面向机器人加工变形的关键点稀疏表征策略。",
+        "en": "A key-point-based sparse representation strategy is proposed for robotic machining deformation."
+      },
+      {
+        "zh": "结合 PCA-GPR 建立切削力预测模型与机器人末端刚度模型，并从其分布中提取关键结构。",
+        "en": "PCA–GPR cutting-force and robot-end stiffness models provide the distributions from which key structures are extracted."
+      },
+      {
+        "zh": "从分布的脊线和边界中选取代表性位置，用少量关键点表征整体变形。",
+        "en": "Representative locations on the distribution ridges and boundaries provide a compact description of the deformation across the part."
+      }
+    ]
+  },
+  "self-adaptive-agent": {
+    "overview": {
+      "zh": "本文面向机器人铣削过程中几何、运动学和精度约束随任务变化的问题，提出用于柔性姿态规划的自适应智能体。研究将多类约束统一纳入姿态规划模型，并使用深度强化学习训练智能体，使规划过程能够根据时变加工条件调整姿态策略，随后通过仿真与实验评价其性能。",
+      "en": "This paper addresses the changing geometric, kinematic, and accuracy constraints that arise during robotic milling. It proposes a self-adaptive agent for flexible posture planning, incorporates multiple constraint types into a unified model, and uses deep reinforcement learning to train posture policies that respond to time-varying machining conditions. Simulation and experiments are used for evaluation."
+    },
+    "contributions": [
+      {
+        "zh": "提出适应时变加工条件的机器人铣削柔性姿态规划模型。",
+        "en": "A flexible posture-planning model is proposed for time-varying robotic milling conditions."
+      },
+      {
+        "zh": "统一纳入几何、运动学和精度等多类约束。",
+        "en": "Geometric, kinematic, and accuracy constraints are incorporated in one planning formulation."
+      },
+      {
+        "zh": "采用深度强化学习训练和执行自适应姿态规划智能体，并通过仿真和实验进行验证。",
+        "en": "Deep reinforcement learning trains and executes the self-adaptive posture agent, which is assessed in simulation and experiments."
+      }
+    ]
+  },
+  "error-foreknowledge": {
+    "overview": {
+      "zh": "机器人加工误差受到工艺参数、机器人刚度与切削载荷的共同影响。研究将这些静态和动态特征进行融合与蒸馏，再用稀疏贝叶斯模型实现加工误差在位预测，并以船用螺旋桨叶形试件检验预测效果。",
+      "en": "Process parameters, robot stiffness, and cutting loads together affect robotic machining errors. The study fuses and distills static and dynamic features for a sparse Bayesian in-situ predictor. Its performance is evaluated on curved specimens shaped like marine propeller blades."
+    },
+    "contributions": [
+      {
+        "zh": "将特征融合与蒸馏用于稀疏贝叶斯学习，建立加工误差在位预测模型。",
+        "en": "A sparse Bayesian foreknowledge framework combines feature fusion with distillation for robotic machining error."
+      },
+      {
+        "zh": "按结构化顺序融合加工参数、机器人刚度和多域力特征等静态与动态信息。",
+        "en": "Process parameters, robot stiffness, and multidomain force features are fused in a structured order across static and dynamic information."
+      },
+      {
+        "zh": "用螺旋桨叶形试件的加工数据检验在位预测效果。",
+        "en": "Machining data from blade-shaped specimens are used to evaluate in-situ prediction."
+      }
+    ]
+  }
+}
